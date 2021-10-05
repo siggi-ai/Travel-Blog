@@ -17,7 +17,7 @@ export default {
   },
 
   mounted: async function () {
-    const url = "http://localhost:8080/mockdata.json"; //change this later to node.js api
+    const url = "https://kind-davinci-ca9573.netlify.app/mockdata.json"; //change this later to node.js api
     const context = this;
     try {
       const response = await fetch(url);
