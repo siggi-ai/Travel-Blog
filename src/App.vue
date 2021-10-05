@@ -5,7 +5,7 @@
         <router-link to="/">
           <img
             class="Logo"
-            alt="The Wonderful Travel Blog Logo (Fly)"
+            alt="The Wonderful Travel Blog Logo (fly)"
             src="../src/assets/logo_2.png"
           />
         </router-link>
@@ -17,15 +17,23 @@
         <router-link class="navButton" to="/">Home</router-link>&nbsp;
         <router-link class="navButton" to="/about">About</router-link>&nbsp;
         <router-link class="navButton" to="/contact">Contact</router-link>&nbsp;
-        <router-link class="navButton" to="/new_post">NewPost</router-link>
-        <router-link class="navButton" to="/log_in">
-          LogIn
+        <router-link v-if="!isHidden" class="navButton" to="/new_post"
+          >NewPost</router-link
+        >
+        <button
+          class="navButtonLogIn"
+          v-on:click="isHidden = !isHidden"
+          value="true"
+        >
+          {{ isHidden ? "LogIn" : "LogOut" }}>
+          <div v-if="!isHidden"></div>
           <img
             class="Logo KeyImage"
             alt="Drawing of a Key"
             src="../src/assets/key.png"
           />
-        </router-link>
+          <div v-if="!isHidden"></div>
+        </button>
       </div>
       <router-view />
     </div>
@@ -41,6 +49,19 @@ import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   components: { Footer },
+  data: function () {
+    return {
+      isHidden: true,
+      isLogedIn: false,
+    };
+  },
+  methods: {
+    Log: function (msg, isHidden) {
+      console.log(msg.target.value);
+      isHidden = msg.target.value;
+      console.log(isHidden);
+    },
+  },
 };
 </script>
 
@@ -51,7 +72,7 @@ export default {
   display: flex;
   width: 100%;
   height: 700px;
-  background-image: url("https://weneedfun.com/wp-content/uploads/2016/08/William-Morris-Wallpapers-1.png");
+  background-image: url("/images/Wallpaper.png");
   padding: 16px 0px;
 }
 
@@ -92,7 +113,7 @@ export default {
 .menuBar {
   display: flex;
   float: right;
-  margin-left: 54%;
+  margin-left: 53%;
   font-family: "Special Elite", cursive;
   position: fixed;
   opacity: 0.5;
@@ -110,12 +131,24 @@ export default {
   margin-left: 30px;
 }
 
+.navButtonLogIn {
+  font-family: "Special Elite", cursive;
+  font-size: 18px;
+  margin-left: 12px;
+  border: none;
+  background-color: #ffcb00;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 12px;
+  border-radius: 5%;
+  width: 200px;
+}
+
 .KeyImage {
   width: 37px;
   height: auto;
   margin-left: 3px;
+  margin-top: 0px;
 }
-
 
 body {
   margin: 0;
