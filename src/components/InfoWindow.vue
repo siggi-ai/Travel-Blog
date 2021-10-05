@@ -44,7 +44,7 @@ img {
   z-index: 0;
   background-color: #ff5151;
   margin-left: 9px;
-  margin-top: 35px;
+  margin-top: 60px;
   box-shadow: 3px 3px black;
 }
 

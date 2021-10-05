@@ -72,7 +72,7 @@ div {
 
 .closeWindow {
   float: left;
-  margin-top: 39px;
+  margin-top: 67px;
   margin-left: 165px;
   position: relative;
   background-color: darkred;
