@@ -62,4 +62,5 @@ export default {
   height: 500px;
   overflow: hidden;
 }
+
 </style>

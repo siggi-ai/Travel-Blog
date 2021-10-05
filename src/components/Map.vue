@@ -21,6 +21,7 @@
         <button class="closeWindow" @click="hideComponent">X</button>
         <InfoWindow :trips="chosenCity" />
       </CustomControl>
+
     </GoogleMap>
   </div>
 </template>

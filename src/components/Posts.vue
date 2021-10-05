@@ -33,15 +33,39 @@
         <img class="flyPic" alt="Logo Fly" src="../assets/logo_2.png" />
       </router-link>
     </div>
+    <div class="cardBox">
+      <GoogleMap
+        v-for="(trip, i) in trips"
+        :key="i"
+        api-key=""
+        style="width: 100%; height: 100%"
+        :center="trips.location.position"
+        :zoom="4"
+      >
+        <Marker
+          v-for="(trip, i) in trips"
+          :key="i"
+          :options="{ position: trips.location.position }"
+        >
+        </Marker>
+      </GoogleMap>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+import { GoogleMap, Marker } from "vue3-google-map";
+
+export default defineComponent({
   props: {
     trips: {},
   },
-};
+  components: {
+    GoogleMap,
+    Marker,
+  },
+});
 </script>
 
 <style scoped>
@@ -49,7 +73,7 @@ export default {
 
 .PostWindow {
   font-family: "Special Elite", cursive;
-  width: 1000px;
+  width: 814px;
   height: 520px;
   text-align: center;
   border: 1px solid black;
@@ -114,7 +138,7 @@ export default {
 .authorPic {
   width: 185px;
   height: auto;
-  margin-left: -398px;
+  margin-left: -306px;
   margin-top: -20px;
   border-radius: 5%;
   border: 1px solid black;
@@ -123,7 +147,7 @@ export default {
 }
 
 .flyPic {
-  margin-left: 430px;
+  margin-left: 360px;
   width: 50px;
   height: auto;
 }
@@ -131,5 +155,20 @@ export default {
 .flyPic:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.cardBox {
+  width: 300px;
+  height: 542px;
+  border-radius: -4%;
+  background-color: aliceblue;
+  color: aliceblue;
+  display: block;
+  float: right;
+  margin-right: -303px;
+  margin-top: -542px;
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 3px 3px black;
 }
 </style>

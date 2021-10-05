@@ -8,7 +8,6 @@
       <img id="authorPic" :src="`${trips.authors_image}`" />
       <br />
       <br />
-      <!-- <a class="DetailButton" href="/post/:id">see more</a> -->
       <router-link :to="`/post/${trips.id}`" class="DetailButton">
         see more
       </router-link>
