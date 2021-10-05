@@ -22,7 +22,7 @@ export default {
     };
   },
   mounted: async function () {
-    const url = "https://615c4f5bbc36ec00c90970b8--kind-davinci-ca9573.netlify.app/mockdata.json";
+    const url = "https://kind-davinci-ca9573.netlify.app/mockdata.json";
     const response = await fetch(url);
     const result = await response.json();
     this.apiResponseData = result;
