@@ -68,8 +68,14 @@ export default {
     width: 480px;
   }
   .RightBody {
-    width: 880px;
+    max-width: 880px;
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .LeftBody {
+    width: 250px;
   }
 }
 
