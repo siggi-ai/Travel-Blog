@@ -73,11 +73,4 @@ export default {
   }
 }
 
-/* @media screen and (max-width: 600px) {
-  .LeftBody {
-    width: 250px;
-  }
-} */
-
-
 </style>
