@@ -184,9 +184,13 @@ body {
     font-family: "Special Elite", cursive;
     white-space: nowrap;
     margin-top: 30px;
+    line-height: 46px;
   }
-  .menuBar {
-    display: none;
+
+  @media screen and (max-width: 700px) {
+    .menuBar {
+      display: none;
+    }
   }
 }
 </style>
