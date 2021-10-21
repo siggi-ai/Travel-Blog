@@ -66,9 +66,10 @@ export default {
 @media screen and (max-width: 1535px) {
   .LeftBody {
     width: 480px;
+    margin-left: -63px
   }
   .RightBody {
-    max-width: 880px;
+    min-width: 800px;
     margin-left: 20px;
   }
 }
@@ -76,6 +77,9 @@ export default {
 @media screen and (max-width: 600px) {
   .LeftBody {
     width: 250px;
+  }
+  .RightBody {
+    display: none;
   }
 }
 

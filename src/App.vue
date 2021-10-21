@@ -12,6 +12,7 @@
       </div>
       <div class="TitleDiv">
         <p class="Headline">The Wonderful Travel Blog ©</p>
+        <p class="Headline_responsive">TWTB ©</p>
       </div>
       <div class="menuBar">
         <router-link class="navButton" to="/">Home</router-link>&nbsp;
@@ -162,5 +163,27 @@ body {
   height: 75px;
   background: #ffcb00;
   padding-top: 13px;
+}
+
+.Headline_responsive {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .navButtonLogIn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Headline {
+    display: none;
+  }
+  .Headline_responsive {
+    display: inline;
+    font-family: "Special Elite", cursive;
+    white-space: nowrap;
+    margin-top: 30px;
+  }
 }
 </style>
