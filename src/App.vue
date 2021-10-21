@@ -185,5 +185,8 @@ body {
     white-space: nowrap;
     margin-top: 30px;
   }
+  .menuBar {
+    display: none;
+  }
 }
 </style>
