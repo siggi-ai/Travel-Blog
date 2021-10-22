@@ -48,6 +48,9 @@ export default {
   scrollbar-color: #ff9b00 #93a4ff;
   scrollbar-width: thin;
   font-size: 17px;
+  -moz-transition: border 0.3s ease-in-out;
+  box-shadow: none;
+  -moz-transition: box-shadow 1s ease-in-out;
 }
 
 .RightBody {
@@ -66,7 +69,14 @@ export default {
 @media screen and (max-width: 1535px) {
   .LeftBody {
     width: 480px;
-    margin-left: -63px
+    margin-left: -185px;
+    border: 3px solid rgb(241, 255, 52);
+    -moz-transition: border 0.3s ease-in-out;
+    box-shadow:
+    0 0 30px 10px rgb(220, 215, 160),
+    0 0 30px 10px rgb(47, 255, 0),
+    0 0 30px 10px rgb(0, 129, 22);
+    -moz-transition: box-shadow 1s ease-in-out;
   }
   .RightBody {
     min-width: 800px;
@@ -77,6 +87,14 @@ export default {
 @media screen and (max-width: 600px) {
   .LeftBody {
     width: 250px;
+    margin-left: -285px;
+    border: 3px solid rgb(96, 255, 109);
+    box-shadow:
+    0 0 90px 5px rgb(120, 231, 241),
+    0 0 120px 5px rgb(46, 238, 3),
+    0 50px 120px 5px rgb(89, 255, 116);
+    -moz-transition: border 0.3s ease-in-out;
+    -moz-transition: box-shadow 1s ease-in-out;
   }
   .RightBody {
     display: none;

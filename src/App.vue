@@ -12,7 +12,7 @@
       </div>
       <div class="TitleDiv">
         <p class="Headline">The Wonderful Travel Blog ©</p>
-        <p class="Headline_responsive">TWTB ©</p>
+        <p class="Headline_responsive">The Mobile + Wonderful Travel Blog ©</p>
       </div>
       <div class="menuBar">
         <router-link class="navButton" to="/">Home</router-link>&nbsp;
@@ -186,11 +186,12 @@ body {
     margin-top: 30px;
     line-height: 46px;
   }
+}
 
-  @media screen and (max-width: 700px) {
-    .menuBar {
-      display: none;
-    }
+@media screen and (max-width: 800px) {
+  .menuBar {
+    display: none;
+    -moz-transition: display 1s ease;
   }
 }
 </style>
