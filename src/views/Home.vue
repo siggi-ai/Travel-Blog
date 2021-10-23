@@ -73,9 +73,9 @@ export default {
     border: 3px solid rgb(241, 255, 52);
     -moz-transition: border 0.3s ease-in-out;
     box-shadow:
-    0 0 30px 10px rgb(220, 215, 160),
-    0 0 30px 10px rgb(47, 255, 0),
-    0 0 30px 10px rgb(0, 129, 22);
+     0 0 90px 5px rgb(120, 231, 241),
+    0 0 120px 5px rgb(46, 238, 3),
+    0 50px 120px 5px rgb(89, 255, 116);
     -moz-transition: box-shadow 1s ease-in-out;
   }
   .RightBody {
@@ -90,8 +90,8 @@ export default {
     margin-left: -285px;
     border: 3px solid rgb(96, 255, 109);
     box-shadow:
-    0 0 90px 5px rgb(120, 231, 241),
-    0 0 120px 5px rgb(46, 238, 3),
+    0 0 40px 5px rgb(120, 231, 241),
+    0 0 40px 5px rgb(46, 238, 3),
     0 50px 120px 5px rgb(89, 255, 116);
     -moz-transition: border 0.3s ease-in-out;
     -moz-transition: box-shadow 1s ease-in-out;
