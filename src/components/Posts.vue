@@ -100,6 +100,14 @@ export default defineComponent({
   .authorPic {
     display: none;
   }
+  .cardBox {
+    display: none;
+  }
+  .descriptionText {
+  margin: 18px 110px 80px 23px;
+  text-align: justify;
+  text-indent: 30px;
+}
 }
 
 .titleTable {
