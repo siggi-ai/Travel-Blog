@@ -89,6 +89,19 @@ export default defineComponent({
   padding: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .PostWindow {
+    width: 300px;
+    margin-left: -340px;
+  }
+  .DetailButtonPost {
+    display: none;
+  }
+  .authorPic {
+    display: none;
+  }
+}
+
 .titleTable {
   margin-left: 50px;
   width: 80%;

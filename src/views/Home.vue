@@ -29,7 +29,8 @@ export default {
     console.log(this.apiResponseData);
     this.sortedByDate = this.apiResponseData.sort(
       (a, b) => new Date(a.visiting_date) - new Date(b.visiting_date)
-    )},
+    );
+  },
 };
 </script>
 
@@ -72,10 +73,8 @@ export default {
     margin-left: -185px;
     border: 3px solid rgb(241, 255, 52);
     -moz-transition: border 0.3s ease-in-out;
-    box-shadow:
-     0 0 90px 5px rgb(120, 231, 241),
-    0 0 120px 5px rgb(46, 238, 3),
-    0 50px 120px 5px rgb(89, 255, 116);
+    box-shadow: 0 0 90px 5px rgb(120, 231, 241), 0 0 120px 5px rgb(46, 238, 3),
+      0 50px 120px 5px rgb(89, 255, 116);
     -moz-transition: box-shadow 1s ease-in-out;
   }
   .RightBody {
@@ -89,10 +88,8 @@ export default {
     width: 250px;
     margin-left: -285px;
     border: 3px solid rgb(96, 255, 109);
-    box-shadow:
-    0 0 40px 5px rgb(120, 231, 241),
-    0 0 40px 5px rgb(46, 238, 3),
-    0 50px 120px 5px rgb(89, 255, 116);
+    box-shadow: 0 0 20px 8px rgb(120, 231, 241), 0 0 20px 8px rgb(46, 238, 3),
+      0 0 20px 8px rgb(89, 255, 116);
     -moz-transition: border 0.3s ease-in-out;
     -moz-transition: box-shadow 1s ease-in-out;
   }
@@ -100,5 +97,4 @@ export default {
     display: none;
   }
 }
-
 </style>
