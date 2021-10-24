@@ -178,7 +178,7 @@ export default defineComponent({
   }
   .titleTable {
     margin-left: 30px;
-/*     width: 200px; */
+    width: 200px;
 }
   .PostWindow {
     width: 300px;
@@ -199,8 +199,13 @@ export default defineComponent({
   text-align: justify;
   text-indent: 30px;
 }
-.image_place {
+  .image_place {
   width: 295px;
+  height: auto;
+}
+.flyPic {
+  margin-left: 120px;
+  width: 50px;
   height: auto;
 }
 }
