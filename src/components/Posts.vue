@@ -178,10 +178,11 @@ export default defineComponent({
   }
   .titleTable {
     margin-left: 30px;
-    width: 80%;
+/*     width: 200px; */
 }
   .PostWindow {
     width: 300px;
+    height: 480px;
     margin-left: -340px;
   }
   .DetailButtonPost {
@@ -197,6 +198,10 @@ export default defineComponent({
   margin: 18px 20px 80px 23px;
   text-align: justify;
   text-indent: 30px;
+}
+.image_place {
+  width: 295px;
+  height: auto;
 }
 }
 </style>
