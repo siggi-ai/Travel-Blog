@@ -173,6 +173,13 @@ export default defineComponent({
 }
 
 @media screen and (max-width: 600px) {
+  .titlePost {
+    font-size: 25px;
+  }
+  .titleTable {
+    margin-left: 30px;
+    width: 80%;
+}
   .PostWindow {
     width: 300px;
     margin-left: -340px;
