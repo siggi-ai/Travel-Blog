@@ -89,27 +89,6 @@ export default defineComponent({
   padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .PostWindow {
-    width: 300px;
-    margin-left: -340px;
-  }
-  .DetailButtonPost {
-    display: none;
-  }
-  .authorPic {
-    display: none;
-  }
-  .cardBox {
-    display: none;
-  }
-  .descriptionText {
-  margin: 18px 110px 80px 23px;
-  text-align: justify;
-  text-indent: 30px;
-}
-}
-
 .titleTable {
   margin-left: 50px;
   width: 80%;
@@ -191,5 +170,26 @@ export default defineComponent({
   overflow: hidden;
   object-fit: cover;
   box-shadow: 3px 3px black;
+}
+
+@media screen and (max-width: 600px) {
+  .PostWindow {
+    width: 300px;
+    margin-left: -340px;
+  }
+  .DetailButtonPost {
+    display: none;
+  }
+  .authorPic {
+    display: none;
+  }
+  .cardBox {
+    display: none;
+  }
+  .descriptionText {
+  margin: 18px 20px 80px 23px;
+  text-align: justify;
+  text-indent: 30px;
+}
 }
 </style>
