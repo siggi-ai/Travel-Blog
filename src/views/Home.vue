@@ -86,7 +86,7 @@ export default {
 @media screen and (max-width: 600px) {
   .LeftBody {
     width: 250px;
-    margin-left: -285px;
+    margin-left: -60px;
     border: 3px solid rgb(96, 255, 109);
     box-shadow: 0 0 20px 8px rgb(120, 231, 241), 0 0 20px 8px rgb(46, 238, 3),
       0 0 20px 8px rgb(89, 255, 116);

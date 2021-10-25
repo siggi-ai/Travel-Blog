@@ -183,7 +183,7 @@ export default defineComponent({
   .PostWindow {
     width: 300px;
     height: 480px;
-    margin-left: -340px;
+    margin-left: -90px;
   }
   .DetailButtonPost {
     display: none;

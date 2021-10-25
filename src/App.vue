@@ -9,15 +9,20 @@
             src="../src/assets/logo_2.png"
           />
         </router-link>
+        <router-link class="navButtonAboutResponsive" to="/about"
+          >About</router-link
+        >&nbsp;
       </div>
       <div class="TitleDiv">
         <p class="Headline">The Wonderful Travel Blog ©</p>
-        <p class="Headline_responsive">The Mobile + Wonderful Travel Blog ©</p>
+        <p class="Headline_responsive">TWTB ©</p>
       </div>
       <div class="menuBar">
-        <router-link class="navButton" to="/">Home</router-link>&nbsp;
-        <router-link class="navButton" to="/about">About</router-link>&nbsp;
-        <router-link class="navButton" to="/contact">Contact</router-link>&nbsp;
+        <router-link class="navButtonHome" to="/">Home</router-link>&nbsp;
+        <router-link class="navButtonAbout" to="/about">About</router-link
+        >&nbsp;
+        <router-link class="navButtonContact" to="/contact">Contact</router-link
+        >&nbsp;
         <router-link v-if="!isHidden" class="navButton" to="/new_post"
           >NewPost</router-link
         >
@@ -128,8 +133,12 @@ export default {
   opacity: 1;
 }
 
-.navButton {
+.navButtonHome.navButtonAbout.navButtonContace {
   margin-left: 30px;
+}
+
+.navButtonAboutResponsive {
+  display: none;
 }
 
 .navButtonLogIn {
@@ -185,6 +194,12 @@ body {
     white-space: nowrap;
     margin-top: 30px;
     line-height: 46px;
+  }
+  .navButtonAboutResponsive {
+    display: flex;
+    font-family: "Special Elite", cursive;
+    position: fixed;
+    margin-left: 180px;
   }
 }
 
