@@ -7,7 +7,7 @@
       also designed some of the Logos. Please contact me! <br/>
       My assistant Smiley Face will answer all questions.
     </p>
-    <a href="/contact">click for contact 👽</a>
+    <router-link class="navButton" to="/contact">click for contact 👽</router-link>&nbsp;
   </div>
 </template>
 
