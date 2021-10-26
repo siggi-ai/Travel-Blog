@@ -17,7 +17,7 @@ export default {
   },
 
   mounted: async function () {
-    const url = "http://localhost:3000/api";
+    const url = "https://backendtravelblog.herokuapp.com/";
     const context = this;
     try {
       const response = await fetch(url);
