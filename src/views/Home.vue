@@ -1,0 +1,100 @@
+<template>
+  <div>
+    <div class="LeftBody">
+      <Overview :trips="apiResponseData" />
+    </div>
+    <div class="RightBody">
+      <Map class="map" :trips="apiResponseData" />
+    </div>
+  </div>
+</template>
+
+<script>
+import Map from "@/components/Map.vue";
+import Overview from "@/components/Overview.vue";
+
+export default {
+  name: "Home",
+  components: { Map, Overview },
+  data: function () {
+    return {
+      apiResponseData: undefined,
+    };
+  },
+  mounted: async function () {
+    const url = "https://backendtravelblog.herokuapp.com/api";
+    const response = await fetch(url);
+    const result = await response.json();
+    this.apiResponseData = result;
+    console.log(this.apiResponseData);
+    this.sortedByDate = this.apiResponseData.sort(
+      (a, b) => new Date(a.visiting_date) - new Date(b.visiting_date)
+    );
+  },
+};
+</script>
+
+<style scoped>
+.LeftBody {
+  display: flex;
+  margin-top: 85px;
+  margin-left: -250px;
+  float: left;
+  width: 57%;
+  height: 500px;
+  overflow-y: scroll;
+  background: linear-gradient(to bottom, #addc68, #3ccae1);
+  border: 3px solid rgb(238, 255, 0);
+  overflow-y: scroll;
+  scrollbar-color: #ff9b00 #93a4ff;
+  scrollbar-width: thin;
+  font-size: 17px;
+  -moz-transition: border 0.3s ease-in-out;
+  box-shadow: none;
+  -moz-transition: box-shadow 1s ease-in-out;
+}
+
+.RightBody {
+  display: flex;
+  margin-top: 85px;
+  margin-right: 55px;
+  float: right;
+  width: 56%;
+  min-height: 500px;
+  background: rgb(0, 124, 255);
+  border: 3px solid red;
+  height: 500px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1535px) {
+  .LeftBody {
+    width: 480px;
+    margin-left: -185px;
+    border: 3px solid rgb(241, 255, 52);
+    -moz-transition: border 0.3s ease-in-out;
+    box-shadow: 0 0 90px 5px rgb(120, 231, 241), 0 0 120px 5px rgb(46, 238, 3),
+      0 50px 120px 5px rgb(89, 255, 116);
+    -moz-transition: box-shadow 1s ease-in-out;
+  }
+  .RightBody {
+    min-width: 800px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .LeftBody {
+    width: 250px;
+    margin-left: -60px;
+    border: 3px solid rgb(96, 255, 109);
+    box-shadow: 0 0 20px 8px rgb(120, 231, 241), 0 0 20px 8px rgb(46, 238, 3),
+      0 0 20px 8px rgb(89, 255, 116);
+    -moz-transition: border 0.3s ease-in-out;
+    -moz-transition: box-shadow 1s ease-in-out;
+  }
+  .RightBody {
+    display: none;
+  }
+}
+</style>
