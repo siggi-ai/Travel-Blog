@@ -64,7 +64,7 @@ export default {
         lng: Number(event.target.elements.lng.value),
         description: event.target.elements.newDescription.value,
       };
-      const response = await fetch("http://localhost:3000/api/new_post", {
+      const response = await fetch("https://backendtravelblog.herokuapp.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -22,7 +22,7 @@ export default {
     };
   },
   mounted: async function () {
-    const url = "http://localhost:8080/mockData.json";
+    const url = "https://backendtravelblog.herokuapp.com/api";
     const response = await fetch(url);
     const result = await response.json();
     this.apiResponseData = result;
