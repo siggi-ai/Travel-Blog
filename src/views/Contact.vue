@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Content">
     <ul class="ContactList">
       <h1>contact page</h1>
       <h2>Do you like my page?</h2>
@@ -45,5 +45,12 @@ ul {
 
 .email {
   color: #a00;
+}
+
+@media screen and (max-width: 600px) {
+  .Content {
+  margin-left: -250px;
+  margin-right: 120px;
+  }
 }
 </style>

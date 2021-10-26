@@ -18,4 +18,11 @@
   color: #873300;
   margin-left: 220px;
 }
+
+@media screen and (max-width: 600px) {
+  .about {
+  margin-left: -40px;
+  margin-right: 120px;
+  }
+}
 </style>

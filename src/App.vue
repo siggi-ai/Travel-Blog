@@ -10,8 +10,7 @@
           />
         </router-link>
         <router-link class="navButtonAboutResponsive" to="/about"
-          >About</router-link
-        >&nbsp;
+          >About</router-link>&nbsp;
       </div>
       <div class="TitleDiv">
         <p class="Headline">The Wonderful Travel Blog ©</p>
@@ -199,7 +198,10 @@ body {
     display: flex;
     font-family: "Special Elite", cursive;
     position: fixed;
-    margin-left: 180px;
+    margin-left: 160px;
+  }
+  .dashboard a {
+    font-size: 15px;
   }
 }
 
