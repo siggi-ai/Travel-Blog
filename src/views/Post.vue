@@ -17,7 +17,11 @@ export default {
   },
 
   mounted: async function () {
+<<<<<<< HEAD
     const url = "https://backendtravelblog.herokuapp.com/api";
+=======
+    const url = "https://kind-davinci-ca9573.netlify.app/mockdata.json"; //change this later to node.js api
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
     const context = this;
     try {
       const response = await fetch(url);

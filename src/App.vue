@@ -5,6 +5,7 @@
         <router-link to="/">
           <img
             class="Logo"
+<<<<<<< HEAD
             alt="The Wonderful Travel Blog Logo (fly)"
             src="../src/assets/logo_2.png"
           />
@@ -32,13 +33,34 @@
         >
           {{ isHidden ? "LogIn" : "LogOut" }}>
           <div v-if="!isHidden"></div>
+=======
+            alt="The Wonderful Travel Blog Logo (Fly)"
+            src="../src/assets/logo_2.png"
+          />
+        </router-link>
+      </div>
+      <div class="TitleDiv">
+        <p class="Headline">The Wonderful Travel Blog ©</p>
+      </div>
+      <div class="menuBar">
+        <router-link class="navButton" to="/">Home</router-link>&nbsp;
+        <router-link class="navButton" to="/about">About</router-link>&nbsp;
+        <router-link class="navButton" to="/contact">Contact</router-link>&nbsp;
+        <router-link class="navButton" to="/new_post">NewPost</router-link>
+        <router-link class="navButton" to="/log_in">
+          LogIn
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
           <img
             class="Logo KeyImage"
             alt="Drawing of a Key"
             src="../src/assets/key.png"
           />
+<<<<<<< HEAD
           <div v-if="!isHidden"></div>
         </button>
+=======
+        </router-link>
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
       </div>
       <router-view />
     </div>
@@ -54,6 +76,7 @@ import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   components: { Footer },
+<<<<<<< HEAD
   data: function () {
     return {
       isHidden: true,
@@ -67,6 +90,8 @@ export default {
       console.log(isHidden);
     },
   },
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 };
 </script>
 
@@ -77,7 +102,11 @@ export default {
   display: flex;
   width: 100%;
   height: 700px;
+<<<<<<< HEAD
   background-image: url("/images/Wallpaper.png");
+=======
+  background-image: url("https://weneedfun.com/wp-content/uploads/2016/08/William-Morris-Wallpapers-1.png");
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   padding: 16px 0px;
 }
 
@@ -118,7 +147,11 @@ export default {
 .menuBar {
   display: flex;
   float: right;
+<<<<<<< HEAD
   margin-left: 53%;
+=======
+  margin-left: 54%;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   font-family: "Special Elite", cursive;
   position: fixed;
   opacity: 0.5;
@@ -132,6 +165,7 @@ export default {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 .navButtonHome.navButtonAbout.navButtonContace {
   margin-left: 30px;
 }
@@ -152,13 +186,25 @@ export default {
   width: 200px;
 }
 
+=======
+.navButton {
+  margin-left: 30px;
+}
+
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 .KeyImage {
   width: 37px;
   height: auto;
   margin-left: 3px;
+<<<<<<< HEAD
   margin-top: 0px;
 }
 
+=======
+}
+
+
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 body {
   margin: 0;
 }
@@ -172,6 +218,7 @@ body {
   background: #ffcb00;
   padding-top: 13px;
 }
+<<<<<<< HEAD
 
 .Headline_responsive {
   display: none;
@@ -211,4 +258,6 @@ body {
     -moz-transition: display 1s ease;
   }
 }
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 </style>

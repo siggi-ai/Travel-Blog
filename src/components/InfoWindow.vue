@@ -8,6 +8,10 @@
       <img id="authorPic" :src="`${trips.authors_image}`" />
       <br />
       <br />
+<<<<<<< HEAD
+=======
+      <!-- <a class="DetailButton" href="/post/:id">see more</a> -->
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
       <router-link :to="`/post/${trips.id}`" class="DetailButton">
         see more
       </router-link>
@@ -43,7 +47,11 @@ img {
   z-index: 0;
   background-color: #ff5151;
   margin-left: 9px;
+<<<<<<< HEAD
   margin-top: 35px;
+=======
+  margin-top: 60px;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   box-shadow: 3px 3px black;
 }
 

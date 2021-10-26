@@ -22,15 +22,23 @@ export default {
     };
   },
   mounted: async function () {
+<<<<<<< HEAD
     const url = "https://backendtravelblog.herokuapp.com/api";
+=======
+    const url = "https://kind-davinci-ca9573.netlify.app/mockdata.json";
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
     const response = await fetch(url);
     const result = await response.json();
     this.apiResponseData = result;
     console.log(this.apiResponseData);
     this.sortedByDate = this.apiResponseData.sort(
       (a, b) => new Date(a.visiting_date) - new Date(b.visiting_date)
+<<<<<<< HEAD
     );
   },
+=======
+    )},
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 };
 </script>
 
@@ -49,9 +57,12 @@ export default {
   scrollbar-color: #ff9b00 #93a4ff;
   scrollbar-width: thin;
   font-size: 17px;
+<<<<<<< HEAD
   -moz-transition: border 0.3s ease-in-out;
   box-shadow: none;
   -moz-transition: box-shadow 1s ease-in-out;
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 }
 
 .RightBody {
@@ -66,6 +77,7 @@ export default {
   height: 500px;
   overflow: hidden;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1535px) {
   .LeftBody {
@@ -97,4 +109,6 @@ export default {
     display: none;
   }
 }
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 </style>

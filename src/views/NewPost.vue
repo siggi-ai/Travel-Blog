@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <form class="Box" @submit="submitMethod">
       <table>
@@ -47,12 +48,40 @@ Tell us about your journey!
       </div>
       <br />
       <button type="submit">Post Entry</button>
+=======
+  <div class="BlogForm">
+    <form
+      class="BlogPost"
+      method="GET"
+      action="/post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <input type="hidden" name="submitted" value="1" />
+      <select name="author" id="author">
+        <option value="">choose country</option>
+      </select>
+      <br />
+      <br />
+      <input type="text" name="title" placeholder="Title" />
+      <br />
+      <br />
+      <textarea
+        style="width: 511px; height: 316px"
+        name="postNew"
+        placeholder="Your New Post"
+        class="textarea"
+      ></textarea>
+      <br />
+      <br />
+      <button @click="PostMethod" type="submit">Submit New Post</button>
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
     </form>
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   methods: {
     submitMethod: async function (event) {
       event.preventDefault();
@@ -74,12 +103,24 @@ export default {
       const result = await response.json();
       this.$router.push({ path: "/" });
       console.log(result);
+=======
+  emits: ["BlogCard"],
+  data: function () {
+    return {
+      currentValue: "The New Post",
+    }
+  },
+  methods: {
+    PostMethod: function (currentValue) {
+      this.$emit("BlogCard", currentValue);
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
     },
   },
 };
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&family=Stick+No+Bills:wght@400;600");
 
 .Box {
@@ -125,3 +166,18 @@ button:hover {
   font-size: 0.5em;
 }
 </style>
+=======
+.BlogForm {
+  margin-top: 100px;
+}
+
+.BlogPost {
+  margin-left: 220px;
+}
+
+.textarea {
+  background-color: #ff5151;
+  border-radius: 3%;
+}
+</style>
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5

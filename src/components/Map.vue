@@ -21,7 +21,10 @@
         <button class="closeWindow" @click="hideComponent">X</button>
         <InfoWindow :trips="chosenCity" />
       </CustomControl>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
     </GoogleMap>
   </div>
 </template>
@@ -73,7 +76,11 @@ div {
 
 .closeWindow {
   float: left;
+<<<<<<< HEAD
   margin-top: 39px;
+=======
+  margin-top: 67px;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   margin-left: 165px;
   position: relative;
   background-color: darkred;

@@ -33,6 +33,7 @@
         <img class="flyPic" alt="Logo Fly" src="../assets/logo_2.png" />
       </router-link>
     </div>
+<<<<<<< HEAD
     <div class="cardBox">
       <GoogleMap
         v-for="(trip, i) in trips"
@@ -50,10 +51,13 @@
         </Marker>
       </GoogleMap>
     </div>
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import { defineComponent } from "vue";
 import { GoogleMap, Marker } from "vue3-google-map";
 
@@ -66,6 +70,13 @@ export default defineComponent({
     Marker,
   },
 });
+=======
+export default {
+  props: {
+    trips: {},
+  },
+};
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 </script>
 
 <style scoped>
@@ -73,7 +84,11 @@ export default defineComponent({
 
 .PostWindow {
   font-family: "Special Elite", cursive;
+<<<<<<< HEAD
   width: 814px;
+=======
+  width: 1000px;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   height: 520px;
   text-align: center;
   border: 1px solid black;
@@ -138,7 +153,11 @@ export default defineComponent({
 .authorPic {
   width: 185px;
   height: auto;
+<<<<<<< HEAD
   margin-left: -306px;
+=======
+  margin-left: -398px;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   margin-top: -20px;
   border-radius: 5%;
   border: 1px solid black;
@@ -147,7 +166,11 @@ export default defineComponent({
 }
 
 .flyPic {
+<<<<<<< HEAD
   margin-left: 360px;
+=======
+  margin-left: 430px;
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
   width: 50px;
   height: auto;
 }
@@ -156,6 +179,7 @@ export default defineComponent({
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+<<<<<<< HEAD
 
 .cardBox {
   width: 300px;
@@ -209,4 +233,6 @@ export default defineComponent({
   height: auto;
 }
 }
+=======
+>>>>>>> 6a607c0e0fa20cccf847a3ad283fb00d5a7debf5
 </style>
