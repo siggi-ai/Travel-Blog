@@ -43,7 +43,7 @@ img {
   z-index: 0;
   background-color: #ff5151;
   margin-left: 9px;
-  margin-top: 55px;
+  margin-top: 65px;
   box-shadow: 3px 3px black;
 }
 
