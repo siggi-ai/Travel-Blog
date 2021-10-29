@@ -199,7 +199,7 @@ body {
     font-family: "Special Elite", cursive;
     position: fixed;
     margin-left: 160px;
-    margin-top: -48px;
+    margin-top: -1px;
   }
   .dashboard a {
     font-size: 15px;
