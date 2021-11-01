@@ -83,10 +83,22 @@ export default {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .LeftBody {
+    width: 480px;
+    margin-left: -25px;
+    border: 3px solid rgb(241, 255, 52);
+    -moz-transition: border 0.3s ease-in-out;
+    box-shadow: 0 0 90px 5px rgb(120, 231, 241), 0 0 120px 5px rgb(46, 238, 3),
+      0 50px 120px 5px rgb(89, 255, 116);
+    -moz-transition: box-shadow 1s ease-in-out;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .LeftBody {
     width: 250px;
-    margin-left: -60px;
+    margin-left: -0px;
     border: 3px solid rgb(96, 255, 109);
     box-shadow: 0 0 20px 8px rgb(120, 231, 241), 0 0 20px 8px rgb(46, 238, 3),
       0 0 20px 8px rgb(89, 255, 116);

@@ -9,12 +9,10 @@
             src="../src/assets/logo_2.png"
           />
         </router-link>
-        <router-link class="navButtonAboutResponsive" to="/about"
-          >About</router-link>&nbsp;
       </div>
+
       <div class="TitleDiv">
         <p class="Headline">The Wonderful Travel Blog ©</p>
-        <p class="Headline_responsive">TWTB ©</p>
       </div>
       <div class="menuBar">
         <router-link class="navButtonHome" to="/">Home</router-link>&nbsp;
@@ -140,6 +138,10 @@ export default {
   display: none;
 }
 
+.navButtonAboutResponsiveTwo {
+  display: none;
+}
+
 .navButtonLogIn {
   font-family: "Special Elite", cursive;
   font-size: 18px;
@@ -194,13 +196,6 @@ body {
     margin-top: 30px;
     line-height: 46px;
   }
-  .navButtonAboutResponsive {
-    display: flex;
-    font-family: "Special Elite", cursive;
-    position: fixed;
-    margin-left: 160px;
-    margin-top: -1px;
-  }
   .dashboard a {
     font-size: 15px;
   }
@@ -208,8 +203,11 @@ body {
 
 @media screen and (max-width: 800px) {
   .menuBar {
-    display: none;
+    margin-left: 100px;
     -moz-transition: display 1s ease;
+  }
+  .Headline {
+    display: none;
   }
 }
 </style>

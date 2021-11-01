@@ -23,6 +23,7 @@
   .about {
   margin-left: -40px;
   margin-right: 120px;
-  }
+  margin-top: 100px;
+}
 }
 </style>
