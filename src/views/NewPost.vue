@@ -126,9 +126,17 @@ button:hover {
 }
 @media screen and (max-width: 600px) {
   .Box {
-margin-left: -20px;
-font-size: 15px;
+    margin-left: -20px;
+    font-size: 15px;
+  }
+  #newDescription {
+    height: 180px;
+    width: 305px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  button {
+    margin-left: 100px;
   }
 }
-
 </style>
