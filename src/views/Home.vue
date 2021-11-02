@@ -78,11 +78,20 @@ export default {
     -moz-transition: box-shadow 1s ease-in-out;
   }
   .RightBody {
-    min-width: 800px;
+    width: 600px;
     margin-left: 20px;
   }
 }
-
+@media screen and (max-width: 1300px) {
+  .RightBody {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .RightBody {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
   .LeftBody {
     width: 480px;
