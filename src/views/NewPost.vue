@@ -124,4 +124,11 @@ button:hover {
   border-radius: 10px;
   font-size: 0.5em;
 }
+@media screen and (max-width: 600px) {
+  .Box {
+margin-left: -20px;
+font-size: 15px;
+  }
+}
+
 </style>
