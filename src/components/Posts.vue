@@ -219,6 +219,11 @@ export default defineComponent({
     text-align: justify;
     text-indent: 30px;
   }
+  .flyPic {
+    margin-left: 260px;
+    width: 50px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -233,6 +238,11 @@ export default defineComponent({
     margin: 18px 40px 80px 23px;
     text-align: justify;
     text-indent: 30px;
+  }
+      .flyPic {
+    margin-left: 260px;
+    width: 50px;
+    height: auto;
   }
 }
 
@@ -259,6 +269,11 @@ export default defineComponent({
     margin: 18px 30px 80px 23px;
     text-align: justify;
     text-indent: 30px;
+  }
+    .flyPic {
+    margin-left: 210px;
+    width: 50px;
+    height: auto;
   }
 }
 
