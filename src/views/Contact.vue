@@ -47,6 +47,39 @@ ul {
   color: #a00;
 }
 
+@media screen and (max-width: 1500px) {
+  .Content {
+  margin-left: -150px;
+  margin-right: 120px;
+  }
+  .HamburgCodingSchool {
+  width: 400px;
+  margin-left: 185px;
+  margin-top: 55px;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .Content {
+  margin-left: -250px;
+  margin-right: 120px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Content {
+  margin-left: -250px;
+  margin-right: 120px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Content {
+  margin-left: -150px;
+  margin-right: 120px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .Content {
   margin-left: -250px;
