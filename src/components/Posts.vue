@@ -172,11 +172,11 @@ export default defineComponent({
   box-shadow: 3px 3px black;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .PostWindow {
     width: 600px;
     height: 480px;
-    margin-left: -220px;
+    margin-left: -200px;
   }
   .DetailButtonPost {
     display: none;
