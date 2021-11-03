@@ -184,6 +184,24 @@ export default defineComponent({
   .authorPic {
     display: none;
   }
+  .cardBox {
+    height: 502px;
+    margin-top: -502px;
+  }
+      .image_place {
+    width: 585px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cardBox {
+    display: none;
+  }
+    .image_place {
+    width: 585px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -200,6 +218,10 @@ export default defineComponent({
   }
   .cardBox {
     display: none;
+  }
+  .image_place {
+    width: 485px;
+    height: auto;
   }
 }
 
