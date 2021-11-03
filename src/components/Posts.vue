@@ -172,6 +172,37 @@ export default defineComponent({
   box-shadow: 3px 3px black;
 }
 
+@media screen and (max-width: 1300px) {
+    .PostWindow {
+    width: 600px;
+    height: 480px;
+    margin-left: -220px;
+  }
+  .DetailButtonPost {
+    display: none;
+  }
+  .authorPic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .PostWindow {
+    width: 500px;
+    height: 480px;
+    margin-left: -37px;
+  }
+  .DetailButtonPost {
+    display: none;
+  }
+  .authorPic {
+    display: none;
+  }
+  .cardBox {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .titlePost {
     font-size: 25px;
@@ -179,7 +210,7 @@ export default defineComponent({
   .titleTable {
     margin-left: 30px;
     width: 200px;
-}
+  }
   .PostWindow {
     width: 300px;
     height: 480px;
@@ -195,18 +226,18 @@ export default defineComponent({
     display: none;
   }
   .descriptionText {
-  margin: 18px 20px 80px 23px;
-  text-align: justify;
-  text-indent: 30px;
-}
+    margin: 18px 20px 80px 23px;
+    text-align: justify;
+    text-indent: 30px;
+  }
   .image_place {
-  width: 295px;
-  height: auto;
-}
-.flyPic {
-  margin-left: 120px;
-  width: 50px;
-  height: auto;
-}
+    width: 295px;
+    height: auto;
+  }
+  .flyPic {
+    margin-left: 120px;
+    width: 50px;
+    height: auto;
+  }
 }
 </style>
