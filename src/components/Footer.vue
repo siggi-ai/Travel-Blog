@@ -1,8 +1,9 @@
 <template>
-  <div class="footer"><a
-            href="https://portfolio-siggi-ai.herokuapp.com/works"
-            >back to portfolio</a
-          >This is the Footer</div>
+  <div class="footer">
+    <a href="https://portfolio-siggi-ai.herokuapp.com/works"
+      >back to portfolio</a
+    >
+  </div>
 </template>
 
 <script>
