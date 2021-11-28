@@ -12,7 +12,12 @@
       </div>
 
       <div class="TitleDiv">
-        <p class="Headline">The Wonderful Travel Blog ©</p>
+        <p class="Headline">
+          The Wonderful Travel Blog ©&nbsp;<a
+            href="https://portfolio-siggi-ai.herokuapp.com/works"
+            >back to portfolio</a
+          >
+        </p>
       </div>
       <div class="menuBar">
         <router-link class="navButtonHome" to="/">Home</router-link>&nbsp;
