@@ -13,7 +13,7 @@
 
       <div class="TitleDiv">
         <p class="Headline">
-          The Wonderful Travel Blog ©&nbsp;<a
+          The Wonderful Travel Blog ©<a
             href="https://portfolio-siggi-ai.herokuapp.com/works"
             >back to portfolio</a
           >
