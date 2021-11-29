@@ -61,6 +61,7 @@ export default defineComponent({
   props: {
     trips: {},
   },
+
   components: {
     GoogleMap,
     Marker,

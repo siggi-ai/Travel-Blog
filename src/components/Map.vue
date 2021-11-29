@@ -3,7 +3,7 @@
     <GoogleMap
       v-for="(trip, i) in trips"
       :key="i"
-      api-key=""
+      :api-key="APIkey"
       style="width: 100%; height: 90%"
       :center="trips[0].location.position"
       :zoom="5"
@@ -21,7 +21,6 @@
         <button class="closeWindow" @click="hideComponent">X</button>
         <InfoWindow :trips="chosenCity" />
       </CustomControl>
-
     </GoogleMap>
   </div>
 </template>
@@ -38,13 +37,14 @@ export default defineComponent({
     CustomControl,
     InfoWindow,
   },
-  props: ["trips"],
+  props: ["trips", "apiKey"],
 
   data: function () {
     return {
       chosenCity: {},
       display: false,
       centerCity: {},
+      APIkey: process.env.VUE_APP_MY_API_KEY,
     };
   },
   methods: {
