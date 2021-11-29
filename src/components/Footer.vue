@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <a href="https://portfolio-siggi-ai.herokuapp.com/works"
+    <a href="https://portfolio-siggi-ai.herokuapp.com/webPages"
       >back to portfolio</a
     >
   </div>
