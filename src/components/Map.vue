@@ -37,7 +37,7 @@ export default defineComponent({
     CustomControl,
     InfoWindow,
   },
-  props: ["trips", "apiKey"],
+  props: ["trips",],
 
   data: function () {
     return {
