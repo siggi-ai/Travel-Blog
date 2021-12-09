@@ -64,16 +64,13 @@ export default {
         lng: Number(event.target.elements.lng.value),
         description: event.target.elements.newDescription.value,
       };
-      const response = await fetch(
-        "https://backendtravelblog.herokuapp.com/",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newEntry),
-        }
-      );
+      const response = await fetch("https://backendtravelblog.herokuapp.com/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newEntry),
+      });
       const result = await response.json();
       this.$router.push({ path: "/" });
       console.log(result);
