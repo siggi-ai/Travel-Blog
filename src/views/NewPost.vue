@@ -65,7 +65,7 @@ export default {
         description: event.target.elements.newDescription.value,
       };
       const response = await fetch(
-        "https://backendtravelblog.herokuapp.com",
+        "https://backendtravelblog.herokuapp.com/api/new_post",
         {
           method: "POST",
           headers: {
