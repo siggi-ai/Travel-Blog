@@ -40,7 +40,7 @@ export default {
   margin-top: 85px;
   margin-left: -250px;
   float: left;
-  width: 57%;
+  width: 58%;
   height: 500px;
   overflow-y: scroll;
   background: linear-gradient(to bottom, #addc68, #3ccae1);
