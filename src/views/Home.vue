@@ -59,7 +59,7 @@ export default {
   margin-top: 85px;
   margin-right: 55px;
   float: right;
-  width: 56%;
+  width: 50%;
   min-height: 500px;
   background: rgb(0, 124, 255);
   border: 3px solid red;
