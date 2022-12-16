@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <a href="https://portfolio-siggi-ai.herokuapp.com/webPages"
+    <a href="https://beamish-centaur-9bd697.netlify.app/"
       >back to portfolio</a
     >
   </div>
