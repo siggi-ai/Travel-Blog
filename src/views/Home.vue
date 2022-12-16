@@ -22,7 +22,7 @@ export default {
     };
   },
   mounted: async function () {
-    const url = "https://backendtravelblog.onrender.com/";
+    const url = "https://backendtravelblog.onrender.com/api";
     const response = await fetch(url);
     const result = await response.json();
     this.apiResponseData = result;
